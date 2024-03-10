@@ -1,0 +1,190 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .gallery img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border: 7px solid #f5f5dc;
+        border-radius: 8px;
+    }
+
+  #mainlou {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 10px rgb(255, 127, 219);
+    border-style: ridge;
+}
+
+#maindory {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 10px rgb(101, 32, 0);
+    border-style: ridge;
+}
+
+#mainsophie {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 10px rgb(255, 69, 69);
+    border-style: ridge;
+}
+
+#mainmaya {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 10px rgb(255, 114, 58);
+    border-style: ridge;
+}
+
+#mainbertie {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 10px rgb(6, 45, 6);
+    border-style: ridge;
+}
+
+
+
+.h2class {
+        max-width: 700px;
+        margin: 80px auto 20px;
+        padding: 0 10px;
+        font-size: 40px;
+        font-family: "Lobster", cursive;
+     }
+
+p { margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 10px;
+    font-size: 18px;}
+
+.dog-list {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: left;
+    border: 2px solid rgb(255, 169, 169);
+    background-color: rgb(254, 248, 248);
+    padding: 10px 10px 10px 40px;
+}
+
+.dog-list li {
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+
+
+body {
+    background-color: rgba(4, 158, 84, 0.407);
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+h1 {
+    margin: 60px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 80px auto;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #mainlou, #maindory, #mainsophie, #mainmaya, #mainbertie {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .h2class, p {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.bigletter::first-letter {
+    font-size: 150%;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .gallery img:first-child {
+        flex: 0 0 100%;
+    }
+
+    .gallery img:nth-child(2),
+    .gallery img:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 50%;
+        max-height: 400px;
+    }
+
+    .gallery img:last-child {
+        flex: 0 0 100%;
+    }
+
+    #bertie1, #bertie2 {
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+ 
